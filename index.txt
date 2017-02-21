@@ -1,0 +1,52 @@
+ <head> 
+  <!--#include virtual="/css-scroll.txt"-->
+<title>JMLR W&CP: Volume 1: Gaussian Processes in Practice</title>
+<style>
+. {font-family:verdana,helvetica,sans-serif}
+a {text-decoration:none;color:#3030a0}
+</style>
+</head> 
+ <body>
+ <div id="content">
+<h1>JMLR Workshop and Conference Proceedings<br>Volume 1: Gaussian Processes in Practice</h1>
+
+<p><b>Editors: Neil Lawrence, Anton Schwaighofer and Joaquin Qui&ntilde;onero Candela</b>
+<table cellspacing=0 cellpadding=4>
+<tr><td><dl>
+<dt>Gaussian Process Approximations of Stochastic Differential Equations
+<dd><b><i>Cedric Archambeau, Dan Cornford, Manfred Opper and John Shawe-Taylor</b></i>; 
+1:1-16, 2007.<br>
+<a href=archambeau07a.html>[abs]</a>
+<a target=_blank href=http://jmlr.csail.mit.edu/proceedings/papers/v1/archambeau07a/archambeau07a.pdf>[pdf]</a>
+</dl><p></td></tr>
+<tr><td><dl>
+<dt>Multi-class Semi-supervised Learning with the &#949-truncated Multinomial Probit Gaussian Process
+<dd><b><i>Simon Rogers, Mark Girolami</b></i>; 
+1:17-32, 2007.<br>
+<a href=rogers07a.html>[abs]</a>
+<a target=_blank href=http://jmlr.csail.mit.edu/proceedings/papers/v1/rogers07a/rogers07a.pdf>[pdf]</a>
+</dl><p></td></tr>
+<tr><td><dl>
+<dt>Learning RoboCup-Keepaway with Kernels
+<dd><b><i>Tobias Jung, Daniel Polani</b></i>; 
+1:33-57, 2007.<br>
+<a href=jung07a.html>[abs]</a>
+<a target=_blank href=http://jmlr.csail.mit.edu/proceedings/papers/v1/jung07a/jung07a.pdf>[pdf]</a>
+</dl><p></td></tr>
+<tr><td><dl>
+<dt>Salient Point and Scale Detection by Minimum Likelihood
+<dd><b><i>Kim S. Pedersen, Marco Loog, Pieter van Dorst</b></i>; 
+1:59-72, 2007.<br>
+<a href=pedersen07a.html>[abs]</a>
+<a target=_blank href=http://jmlr.csail.mit.edu/proceedings/papers/v1/pedersen07a/pedersen07a.pdf>[pdf]</a>
+</dl><p></td></tr>
+<tr><td><dl>
+<dt>Sparse Log Gaussian Processes via MCMC for Spatial Epidemiology
+<dd><b><i>Jarno Vanhatalo, Aki Vehtari</b></i>; 
+1:73-89, 2007.<br>
+<a href=vanhatalo07a.html>[abs]</a>
+<a target=_blank href=http://jmlr.csail.mit.edu/proceedings/papers/v1/vanhatalo07a/vanhatalo07a.pdf>[pdf]</a>
+</dl><p></td></tr>
+</table></div> 
+ <!--#include virtual="/nav-bar.txt"--> 
+  </body>
