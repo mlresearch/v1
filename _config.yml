@@ -1,6 +1,6 @@
 title: PMLR Volume 1
 description: > # this means to ignore newlines until "baseurl:"
-  PMLR Volume 1: Gaussian Processes in Practice.
+  Gaussian Processes in Practice.
 baseurl: "/v1"
 volume: 1
 date: 2007-03-11
