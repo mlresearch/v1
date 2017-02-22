@@ -33,7 +33,7 @@ layout: default
   <h3 id="{{ section.name }}">{{ section.title }}</h3>
     {% for post in site.posts | sort_by: "firstpage" %}
     {% if section.name == post.section %}
-    {% include paper_list.html %}
+    {% include listpaper.html %}
     {% endif %}
     {% endfor %}
   </dl>
@@ -42,7 +42,7 @@ layout: default
   <dl>
   {% for post in site.posts | sort_by: "firstpage" %}
   {% unless post.section %} 
-  {% include paper_list.html %}
+  {% include listpaper.html %}
   {% endunless %}
   {% endfor %}
 
