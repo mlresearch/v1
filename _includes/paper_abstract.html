@@ -4,7 +4,7 @@
     {% assign lastone = page.authors | last %}
     {% for person in page.authors %}
     {% include listperson.html %}
-    {% endfor %}
+    {% endfor %};
   </div>
   <div id="info" class="authors">
     {{ site.conference }}, PMLR {{ site.volume }}:{{ page.firstpage }}-{{ page.lastpage }}, {{ site.year }}.
