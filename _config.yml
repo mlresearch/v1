@@ -36,4 +36,4 @@ baseurl: "/v1"
 twitter_username: mlresearch
 github_username: mlresearch
 markdown: kramdown
-permalink: "/a/:title.html"
+permalink: "/:title.html"
