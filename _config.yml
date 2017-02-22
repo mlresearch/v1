@@ -3,7 +3,7 @@
 ---
 booktitle: Gaussian Processes in Practice
 series: Journal of Machine Learning Research - Proceedings Track
-volume: '1'
+volume: 1
 start: 2006-06-12
 end: 2006-06-13
 published: 2007-03-11
@@ -17,6 +17,8 @@ layout: proceedings
 key: LawrenceNSACQ2006
 month: 0
 abstract: 
+origpdf: 
+pdf: "./LawrenceNSACQ2006/LawrenceNSACQ2006.pdf"
 sections: 
 editors:
 - given: Neil
