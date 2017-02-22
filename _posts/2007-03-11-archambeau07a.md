@@ -20,12 +20,12 @@ firstpage: 1
 lastpage: 16
 sections: 
 authors:
-- givenname: Cedric
-  surname: Archambeau
-- givenname: Dan
-  surname: Cornford
-- givenname: Manfred
-  surname: Opper
-- givenname: John
-  surname: Shawe-Taylor
+- given: Cedric
+  family: Archambeau
+- given: Dan
+  family: Cornford
+- given: Manfred
+  family: Opper
+- given: John
+  family: Shawe-Taylor
 ---

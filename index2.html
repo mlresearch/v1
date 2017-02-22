@@ -9,8 +9,9 @@ layout: default
 
   
   <p><strong>Editors:
-      {% for editor in site.editors %}
-      {{ editor.givenname }} {{ editor.surname }}
+      {% assign lastone = site.editors | last %}
+      {% for person in site.editors %}
+      {% include listperson.html %}
       {% endfor %}
   </strong></p>
 

@@ -19,12 +19,12 @@ month: 0
 abstract: 
 sections: 
 editors:
-- givenname: Neil
-  surname: Lawrence
-- givenname: Anton
-  surname: Schwaighofer
-- givenname: Joaquin
-  surname: Qui\~{n}onero Candela
+- given: Neil
+  family: Lawrence
+- given: Anton
+  family: Schwaighofer
+- given: Joaquin
+  family: Qui\~{n}onero Candela
 title: Gaussian Processes in Practice
 conference: Gaussian Processes in Practice
 email: ''
