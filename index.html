@@ -1,53 +1,48 @@
 ---
 layout: default
+title: "JMLR W&CP: Volume 1: Gaussian Processes in Practice"
 ---
 
-<div class="home">
+<div id="content">
+<h1>JMLR Workshop and Conference Proceedings<br>Volume 1: GPIP</h1>
+<h2>Gaussian Processes in Practice
+<br>June 12-13, 2006, Bletchley Park, Bletchley, U.K.</h2>
 
-  <h1>Proceedings of Machine Learning Research</h1>
-  <h2>Volume {{ site.volume }}: {{ site.conference }} {{ site.start | date: "%B %-d" }} to {{ site.end | date: "%B %-d, %Y" }}, {{ site.address }}</h2>
-
-  
-  <p><strong>Editors:
-      {% for editor in site.editors %}
-      {{ editor.firstname }} {{ editor.lastname }}
-      {% endfor %}
-  </strong></p>
-
-  <div id="sectionnav">
-    <p>Contents:</p>
-    <ul>
-      {% for section in site.sections %}
-      <li><a href="#{{ section.name }}">{{ section.title }}</a></li>
-      {% endfor %}
-    </ul>
-
-    <label for="search-authors">Filter Authors:</label>
-    <input type="search" name="filter-authors" id="search-authors" value />
-    <label for="search-titles">Filter Titles:</label>
-    <input type="search" name="filter-titles" id="search-titles" value />
-  </div>
-  {% if site.sections %}
-  {% for section in site.sections %}
-  <h3 id="{{ section.name }}">{{ section.title }}</h3>
-    {% for post in site.posts | sort_by: "firstpage" %}
-    {% if section.name == post.section %}
-    {% include paper_list.html %}
-    {% endif %}
-    {% endfor %}
-  </dl>
-  {% endfor %}
-  {% endif %}
-  <dl>
-  {% for post in site.posts | sort_by: "firstpage" %}
-  {% unless post.section %} 
-  {% include paper_list.html %}
-  {% endunless %}
-  {% endfor %}
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-  
-</div>
-<!-- Search Widget -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<script src="../js/search.js"></script>
+<p><b>Editors: Neil Lawrence, Anton Schwaighofer and Joaquin Qui&ntilde;onero Candela</b>
+<table cellspacing=0 cellpadding=4>
+<tr><td><dl>
+<dt>Gaussian Process Approximations of Stochastic Differential Equations
+<dd><b><i>Cedric Archambeau, Dan Cornford, Manfred Opper and John Shawe-Taylor</b></i>; 
+1:1-16, 2007.<br>
+<a href=archambeau07a.html>[abs]</a>
+<a target=_blank href=http://jmlr.csail.mit.edu/proceedings/papers/v1/archambeau07a/archambeau07a.pdf>[pdf]</a>
+</dl><p></td></tr>
+<tr><td><dl>
+<dt>Multi-class Semi-supervised Learning with the &#949-truncated Multinomial Probit Gaussian Process
+<dd><b><i>Simon Rogers, Mark Girolami</b></i>; 
+1:17-32, 2007.<br>
+<a href=rogers07a.html>[abs]</a>
+<a target=_blank href=http://jmlr.csail.mit.edu/proceedings/papers/v1/rogers07a/rogers07a.pdf>[pdf]</a>
+</dl><p></td></tr>
+<tr><td><dl>
+<dt>Learning RoboCup-Keepaway with Kernels
+<dd><b><i>Tobias Jung, Daniel Polani</b></i>; 
+1:33-57, 2007.<br>
+<a href=jung07a.html>[abs]</a>
+<a target=_blank href=http://jmlr.csail.mit.edu/proceedings/papers/v1/jung07a/jung07a.pdf>[pdf]</a>
+</dl><p></td></tr>
+<tr><td><dl>
+<dt>Salient Point and Scale Detection by Minimum Likelihood
+<dd><b><i>Kim S. Pedersen, Marco Loog, Pieter van Dorst</b></i>; 
+1:59-72, 2007.<br>
+<a href=pedersen07a.html>[abs]</a>
+<a target=_blank href=http://jmlr.csail.mit.edu/proceedings/papers/v1/pedersen07a/pedersen07a.pdf>[pdf]</a>
+</dl><p></td></tr>
+<tr><td><dl>
+<dt>Sparse Log Gaussian Processes via MCMC for Spatial Epidemiology
+<dd><b><i>Jarno Vanhatalo, Aki Vehtari</b></i>; 
+1:73-89, 2007.<br>
+<a href=vanhatalo07a.html>[abs]</a>
+<a target=_blank href=http://jmlr.csail.mit.edu/proceedings/papers/v1/vanhatalo07a/vanhatalo07a.pdf>[pdf]</a>
+</dl><p></td></tr>
+</table></div> 
