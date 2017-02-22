@@ -14,20 +14,19 @@ year: '2006'
 shortname: GPIP
 bibsource: http://jmlr.csail.mit.edu/proceedings/
 layout: proceedings
-key: LawrenceNSACQ2006
+id: LawrenceNSACQ2006
 month: 0
 abstract: 
 origpdf: 
 pdf: "./LawrenceNSACQ2006/LawrenceNSACQ2006.pdf"
 sections: 
-editors:
+editor:
 - given: Neil
   family: Lawrence
 - given: Anton
   family: Schwaighofer
 - given: Joaquin
   family: Qui\~{n}onero Candela
-date: 2007-03-11
 title: Gaussian Processes in Practice
 conference: Gaussian Processes in Practice
 email: ''
