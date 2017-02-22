@@ -41,7 +41,8 @@ layout: default
   {% endfor %}
   {% endif %}
   <dl>
-  {% for post in site.posts | sort_by: "firstpage" %}
+  {% assign sorted = (site.posts | sort: 'firstpage') %}
+  {% for post in sorted %}
   {% unless post.section %} 
   {% include listpaper.html %}
   {% endunless %}
