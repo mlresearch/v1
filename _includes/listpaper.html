@@ -1,12 +1,13 @@
 <div class="paper">
   <p class="title"><b>{{ post.title }}</b></p>
-  <p class="details">{% if post.layout == 'inproceedings' %}{% if post.booktitle %} in <i>{{ post.booktitle }}</i>{% endif %}{% elsif post.layout == 'article' %}{% if post.journal %} in <i>{{ post.journal }}</i>{% if post.volume %} {{ post.volume }}{% if post.number %} ({{ post.number }}){% endif %}{% endif %}{% endif %}{% elsif post.layout == 'incollection' %}{%if post.booktitle %} in{% if post.chapter %} Chapter {{ post.chapter }} of{% endif %} <i>{{ post.booktitle }}</i>{% endif %}{% endif %}{%if post.editor.size > 0 %} ({% assign lastone = post.editors | last %}{% for person in post.editors %}{% include listperson.html %}{% endfor %} {% if post.editor.size > 1 %}eds{% else %}ed.{% endif %}){% endif %}{%if post.firstpage %}, pp {{ post.firstpage }}-{{ post.lastpage }}{% endif %}
-    <span class="authors">
-      {% assign lastone = post.authors | last %}
-      {% for person in post.authors %}
-      {% include listperson.html %}
-      {% endfor %}
-    </span>
+  <span class="authors">
+    {% assign lastone = post.authors | last %}
+    {% for person in post.authors %}
+    {% include listperson.html %}
+    {% endfor %}
+  </span>
+  <span class="details">{% if post.layout == 'inproceedings' %}{% if post.booktitle %} in <i>{{ post.booktitle }}</i>{% endif %}{% elsif post.layout == 'article' %}{% if post.journal %} in <i>{{ post.journal }}</i>{% if post.volume %} {{ post.volume }}{% if post.number %} ({{ post.number }}){% endif %}{% endif %}{% endif %}{% elsif post.layout == 'incollection' %}{%if post.booktitle %} in{% if post.chapter %} Chapter {{ post.chapter }} of{% endif %} <i>{{ post.booktitle }}</i>{% endif %}{% endif %}{%if post.editor.size > 0 %} ({% assign lastone = post.editors | last %}{% for person in post.editors %}{% include listperson.html %}{% endfor %} {% if post.editor.size > 1 %}eds{% else %}ed.{% endif %}){% endif %}{%if post.firstpage %}, pp {{ post.firstpage }}-{{ post.lastpage }}{% endif %}</span>
+    <br>
     <span class="links">
       [<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">abs</a>]
       {% if post.linkpdf %}[<a href="{{ post.linkpdf }}">pdf</a>]{% endif %}
