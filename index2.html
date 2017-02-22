@@ -31,7 +31,7 @@ layout: default
   {% if site.sections %}
   {% for section in site.sections %}
   <h3 id="{{ section.name }}">{{ section.title }}</h3>
-  {% assign sorted = (site.posts | sort: 'firstpage') | reverse %}
+  {% assign sorted = (site.posts | sort: 'firstpage') %}
   {% for post in sorted %}
     {% if section.name == post.section %}
     {% include listpaper.html %}
