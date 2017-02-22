@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    {% include css-scroll.html %}
-    <title>{{ page.title }}</title>
-  </head>
+
+  {% include head.html %}
+
   <body>
 
-    {% include nav-bar.html %}
+    {% include header.html %}
 
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
       </div>
     </div>
-    
-    <center>This document last modified {{ site.time }}</center>
 
     {% include footer.html %}
 
