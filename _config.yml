@@ -15,8 +15,6 @@ shortname: GPIP
 bibsource: http://jmlr.csail.mit.edu/proceedings/
 layout: proceedings
 key: LawrenceNSACQ2006
-categories:
-- LawrenceNSACQ2006
 month: 0
 abstract: 
 sections: 
@@ -36,4 +34,4 @@ baseurl: "/v1"
 twitter_username: mlresearch
 github_username: mlresearch
 markdown: kramdown
-permalink: "/:categories/:title.html"
+permalink: "/:title.html"

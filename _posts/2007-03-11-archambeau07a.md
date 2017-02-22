@@ -15,8 +15,6 @@ abstract: 'Stochastic differential equations arise naturally in a range of conte
 pdf: http://jmlr.org/proceedings/papers/v1/archambeau07a/archambeau07a.pdf
 layout: inproceedings
 key: archambeau07a
-categories:
-- archambeau07a
 month: 0
 firstpage: 1
 lastpage: 16
