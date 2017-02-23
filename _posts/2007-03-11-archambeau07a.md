@@ -12,7 +12,7 @@ abstract: 'Stochastic differential equations arise naturally in a range of conte
   is viable and that the results are very promising as the variational approximate
   solution outperforms standard Gaussian process regression for non-Gaussian Markov
   processes.'
-pdf: http://proceedings.pmlr.press/archambeau07a/archambeau07a.pdf
+pdf: http://proceedings.pmlr.press/v/archambeau07a/archambeau07a.pdf
 layout: inproceedings
 id: archambeau07a
 month: 0
