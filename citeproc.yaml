@@ -1,0 +1,32 @@
+---
+layout: null
+---
+{% assign sorted = (site.posts | sort: 'firstpage') %}
+{% for post in sorted %}
+{% capture id %}{{ post.id | remove_first: '/' }}{% endcapture %}
+- title: One-click science marketing
+  volume: {{ post.volume }}
+  URL: {{ post.url }}
+  DOI: 10.1038/nmat3283
+  issue: {{ post.issue }}
+  container-title: {{ post.container-title }}
+  publisher: {{ post.publisher }}  
+  author: {% for person in post.author %}
+  - family: {{ person.family }}
+    given: {{ person.given }}
+    orcid: {{ person.orcid }}
+    {% endfor %}
+  editor: {% for person in site.editor %}
+  - family: {{ person.family }}
+    given: {{ person.given }}
+    orcid: {{ person.orcid }}
+    {% endfor %}
+  address: {{ post.address }}
+  page: {{ post.page }}
+  id: {{ id }}
+  type: {{ post.type }}
+  issued:
+    date-parts: {% for date-part in post.issued.date-parts %}
+      - {{ date-part }}
+      {% endfor %}
+{% endfor %}
