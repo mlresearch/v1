@@ -36,7 +36,7 @@ markdown: kramdown
 permalink: "/:title.html"
 github:
   edit: true
-  repository: mlresearch
+  repository: v1
 conference:
   name: Gaussian Processes in Practice
   url: http://gpss.cc/gpip/
