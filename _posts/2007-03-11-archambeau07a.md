@@ -31,6 +31,7 @@ author:
 - given: John
   family: Shawe-Taylor
 date: 2007-03-11
+address: Bletchley Park, UK
 publisher: PMLR
 container-title: Gaussian Processes in Practice
 volume: '1'

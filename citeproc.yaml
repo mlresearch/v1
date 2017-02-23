@@ -1,14 +1,13 @@
 ---
 layout: null
 ---
-{% assign sorted = (site.posts | sort: 'firstpage') %}
-{% for post in sorted %}
-{% capture id %}{{ post.id | remove_first: '/' }}{% endcapture %}
-- title: {{ post.title }}
+{% assign sorted = (site.posts | sort: 'firstpage') %}{% for post in sorted %}{% capture id %}{{ post.id | remove_first: '/' }}{% endcapture %}
+- title: "{{ post.title }}"
   volume: {{ post.volume }}
-  URL: {{ post.url }}
-  DOI: 10.1038/nmat3283
-  issue: {{ post.issue }}
+  URL: {{site.url}}{{site.baseurl}}{{ post.url }}{% if post.doi %}
+  DOI: {{ post.doi }}{% endif %}{% if post.pdf %}
+  PDF: {{ post.pdf }}{% endif %}{% if post.issue %}
+  issue: {{ post.issue }}{% endif %}
   container-title: {{ post.container-title }}
   publisher: {{ post.publisher }}  
   author: {% for person in post.author %}
@@ -18,11 +17,12 @@ layout: null
   editor: {% for person in site.editor %}
   - family: {{ person.family }}
     given: {{ person.given }}{% if person.orcid %}
-    orcid: {{ person.orcid }}{% endif %}{% endfor %}
-  {% if post.address %}address: {{ post.address }}{% endif %}
+    orcid: {{ person.orcid }}{% endif %}{% endfor %}{% if post.address %}
+  address: {{ post.address }}{% endif %}
   page: {{ post.page }}
-  id: {{ id }}
-  type: {{ post.type }}
+  id: {{ id }}{% if post.type %}
+  type: {{ post.type }}{% endif %}
   issued:
     date-parts: {% for date-part in post.issued.date-parts %}
-      - {{ date-part }}{% endfor %}{% endfor %}
+      - {{ date-part }}{% endfor %}{% if post.abstract %}
+  abstract: "{{ post.abstract }}"{% endif %}{% endfor %}
