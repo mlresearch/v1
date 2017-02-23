@@ -13,13 +13,13 @@ layout: null
   publisher: {{ post.publisher }}  
   author: {% for person in post.author %}
   - family: {{ person.family }}
-    given: {{ person.given }}
-    orcid: {{ person.orcid }}{% endfor %}
+    given: {{ person.given }}{% if person.orcid %}
+    orcid: {{ person.orcid }}{% endif %}{% endfor %}
   editor: {% for person in site.editor %}
   - family: {{ person.family }}
-    given: {{ person.given }}
-    orcid: {{ person.orcid }}{% endfor %}
-  address: {{ post.address }}
+    given: {{ person.given }}{% if person.orcid %}
+    orcid: {{ person.orcid }}{% endif %}{% endfor %}
+  {% if post.address %}address: {{ post.address }}{% endif %}
   page: {{ post.page }}
   id: {{ id }}
   type: {{ post.type }}
