@@ -7,8 +7,6 @@ volume: 1
 start: 2006-06-12
 end: 2006-06-13
 published: 2007-03-11
-address: Bletchley Park, UK
-conference_url: http://ml.dcs.shef.ac.uk/gpip/
 comments: 'no'
 year: '2006'
 shortname: GPIP
@@ -28,7 +26,6 @@ editor:
 - given: Joaquin
   family: Qui\~{n}onero Candela
 title: Gaussian Processes in Practice
-conference: Gaussian Processes in Practice
 email: ''
 description: Gaussian Processes in Practice, Bletchley Park, UK
 url: http://proceedings.mlr.press
@@ -37,8 +34,13 @@ twitter_username: mlresearch
 github_username: mlresearch
 markdown: kramdown
 permalink: "/:title.html"
-gitub:
+github:
   edit: true
+  repository: mlresearch
+conference:
+  name: Gaussian Processes in Practice Workshop
+  url: http://gpss.cc/gpip/
+  location: Bletchley Park, UK
 analytics:
   google:
     tracking_id: UA-92432422-1
