@@ -1,3 +1,4 @@
+# Format based on citeproc: http://blog.martinfenner.org/2013/07/30/citeproc-yaml-for-bibliographies/
 ---
 title: Gaussian Process Approximations of Stochastic Differential Equations
 abstract: 'Stochastic differential equations arise naturally in a range of contexts,
@@ -32,4 +33,12 @@ author:
   family: Shawe-Taylor
 date: 2007-03-11
 publisher: PMLR
+container-title: Gaussian Processes in Practice
+volume: '1'
+genre: inproceedings
+issued:
+  date-parts:
+  - 2007
+  - 3
+  - 11
 ---
