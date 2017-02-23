@@ -3,9 +3,9 @@ title: Gaussian Process Approximations of Stochastic Differential Equations
 abstract: 'Stochastic differential equations arise naturally in a range of contexts,
   from financial to environmental modeling. Current solution methods are limited in
   their representation of the posterior process in the presence of data. In this work,
-  we present a novel Gaussian process approximation to the posterior measure \emph{over
-  paths} for a general class of stochastic differential equations in the presence
-  of observations. The method is applied to two simple problems: the Ornstein-Uhlenbeck
+  we present a novel Gaussian process approximation to the posterior measure \emphover
+  paths for a general class of stochastic differential equations in the presence of
+  observations. The method is applied to two simple problems: the Ornstein-Uhlenbeck
   process, of which the exact solution is known and can be compared to, and the double-well
   system, for which standard approaches such as the ensemble Kalman smoother fail
   to provide a satisfactory result. Experiments show that our variational approximation

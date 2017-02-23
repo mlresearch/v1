@@ -14,7 +14,7 @@ bibsource: http://jmlr.csail.mit.edu/proceedings/
 layout: proceedings
 id: LawrenceNSACQ2006
 month: 0
-abstract: 
+abstract: ''
 origpdf: 
 pdf: http://proceedings.pmlr.press/LawrenceNSACQ2006/LawrenceNSACQ2006.pdf
 sections: 
@@ -24,7 +24,7 @@ editor:
 - given: Anton
   family: Schwaighofer
 - given: Joaquin
-  family: Qui\~{n}onero Candela
+  family: Quiñonero Candela
 title: Gaussian Processes in Practice
 email: ''
 description: Gaussian Processes in Practice, Bletchley Park, UK
