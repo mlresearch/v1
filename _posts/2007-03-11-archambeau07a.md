@@ -1,4 +1,3 @@
-# Format based on citeproc: http://blog.martinfenner.org/2013/07/30/citeproc-yaml-for-bibliographies/
 ---
 title: Gaussian Process Approximations of Stochastic Differential Equations
 abstract: 'Stochastic differential equations arise naturally in a range of contexts,
@@ -41,4 +40,5 @@ issued:
   - 2007
   - 3
   - 11
+# Format based on citeproc: http://blog.martinfenner.org/2013/07/30/citeproc-yaml-for-bibliographies/
 ---
