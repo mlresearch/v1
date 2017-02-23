@@ -7,7 +7,7 @@ volume: 1
 start: 2006-06-12
 end: 2006-06-13
 published: 2007-03-11
-comments: 'no'
+comments: false
 year: '2006'
 shortname: GPIP
 bibsource: http://jmlr.csail.mit.edu/proceedings/
@@ -45,4 +45,3 @@ conference:
 analytics:
   google:
     tracking_id: UA-92432422-1
-reponame: v1
