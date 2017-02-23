@@ -14,7 +14,8 @@ layout: null
 {{c}}
 {% assign sorted = (site.posts | sort: 'firstpage') %}
 {% for post in sorted %}
-@InProceedings{{o}}{{post.id}},
+{% capture id %}{{ post.id | remove_first: '/' }}{% endcapture %}
+@InProceedings{{o}}{{ id }},
   title = {{o}}{{ post.title }}{{c}},
   author = {{o}}{% assign lastone = post.author.last %}{% for person in post.author %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},
   editor = {{o}}{% assign lastone = site.editor.last %}{% for person in site.editor %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},
