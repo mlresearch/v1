@@ -41,7 +41,9 @@ conference:
   name: Gaussian Processes in Practice Workshop
   url: http://gpss.cc/gpip/
   location: Bletchley Park, UK
-  dates: !ruby/object:Enumerator {}
+  dates:
+  - 2006-06-12
+  - 2006-06-13
 analytics:
   google:
     tracking_id: UA-92432422-1
