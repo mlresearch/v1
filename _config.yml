@@ -38,7 +38,7 @@ github:
   edit: true
   repository: mlresearch
 conference:
-  name: Gaussian Processes in Practice Workshop
+  name: Gaussian Processes in Practice
   url: http://gpss.cc/gpip/
   location: Bletchley Park, UK
   dates:
