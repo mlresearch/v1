@@ -17,8 +17,8 @@ layout: inproceedings
 series: Proceedings of Machine Learning Research
 id: archambeau07a
 month: 0
-firstpage: 1
-lastpage: 16
+firstpage: '1'
+lastpage: '16'
 page: 1-16
 sections: 
 author:
