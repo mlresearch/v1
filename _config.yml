@@ -1,8 +1,6 @@
-# Site settings
-# Auto generated from v1.bib
 ---
 booktitle: Gaussian Processes in Practice
-series: Journal of Machine Learning Research - Proceedings Track
+series: Proceedings of Machine Learning Research
 volume: 1
 start: 2006-06-12
 end: 2006-06-13
@@ -45,3 +43,5 @@ conference:
 analytics:
   google:
     tracking_id: UA-92432422-1
+# Site settings
+# Auto generated from v1.bib
