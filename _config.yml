@@ -22,7 +22,19 @@ editor:
 - given: Joaquin
   family: Quiñonero Candela
 title: Proceedings of Machine Learning Research
-description: Gaussian Processes in Practice, 12-2006-06-13, Bletchley Park, UK
+description: |
+  Gaussian Processes in Practice
+    Held in Bletchley Park, UK on 12-13 June 2006
+
+  Published as Volume 1 by the Proceedings of Machine Learning Research on 11 March 2007.
+
+  Volume Edited by:
+    Neil Lawrence
+    Anton Schwaighofer
+    Joaquin Quiñonero Candela
+
+  Series Editors:
+    Neil D. Lawrence
 url: http://proceedings.mlr.press
 baseurl: "/v1"
 twitter_username: mlresearch
