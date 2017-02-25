@@ -21,9 +21,9 @@ editor:
   family: Schwaighofer
 - given: Joaquin
   family: Quiñonero Candela
-title: 'PMLR Volume 1: Gaussian Processes in Practice'
+title: Proceedings of Machine Learning Research
 email: ''
-description: Gaussian Processes in Practice, Bletchley Park, UK
+description: Gaussian Processes in Practice13-2006-06-13, Bletchley Park, UK
 url: http://proceedings.mlr.press
 baseurl: "/v1"
 twitter_username: mlresearch
