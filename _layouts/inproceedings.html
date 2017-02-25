@@ -8,6 +8,7 @@ layout: default
   {% include edit_link.html %}
 
   {% include paper_google_scholar.html %}
+  {% include hidden_copy_code.html %}
         
   <meta name="viewport" content="width=device-width">
 
@@ -16,6 +17,11 @@ layout: default
 <div class="page-content" id="content">
   {% include paper_abstract.html %}
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <input type="text" name="Element To Be Copied" id="copy-me" value="foo loves bar"/>
+  <button id="copy-btn">Copy</button><br/><br/>
+  <textarea placeholder="paste here"></textarea>
+  
   {% if site.comments %}
   {% include disqus_comment_code.html %}
   {% endif %}
