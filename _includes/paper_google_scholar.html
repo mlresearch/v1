@@ -1,4 +1,5 @@
 <meta name="citation_title" content="{{ page.title }}">
+{% include edit_link.html %}
 {% for author in page.author %}
 <meta name="citation_author" content="{{ author.given }} {{ author.family }}">{% endfor %}
 <meta name="citation_publication_date" content="{{ site.published | date: "%Y/%m/%d" }}">
