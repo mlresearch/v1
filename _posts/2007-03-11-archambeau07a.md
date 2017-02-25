@@ -17,6 +17,7 @@ layout: inproceedings
 series: Proceedings of Machine Learning Research
 id: archambeau07a
 month: 0
+tex_title: Gaussian Process Approximations of Stochastic Differential Equations
 firstpage: 1
 lastpage: 16
 page: 1-16
