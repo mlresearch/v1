@@ -34,7 +34,6 @@ author:
 date: 2007-03-11
 address: Bletchley Park, UK
 publisher: PMLR
-bibtex_copy: true
 container-title: Gaussian Processes in Practice
 volume: '1'
 genre: inproceedings

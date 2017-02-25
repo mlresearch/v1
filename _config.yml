@@ -45,6 +45,7 @@ permalink: "/:title.html"
 github:
   edit: true
   repository: v1
+bibtex_copy: true
 email: ''
 conference:
   name: Gaussian Processes in Practice
