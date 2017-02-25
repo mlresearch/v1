@@ -19,11 +19,9 @@ layout: default
 {% assign o = '{' %}
 {% assign c = '}' %}
 {% capture id %}{{ page.id | remove_first: '/' }}{% endcapture %}
-<div id="codebox">
+<div class="codebox">
 <pre><code id="bibtex">{% include bibtex_entry %}</code></pre>
 </div>
-
-
 
   {% if site.comments %}
   {% include disqus_comment_code.html %}
