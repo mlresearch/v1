@@ -20,11 +20,11 @@ layout: default
 {% capture id %}{{ page.id | remove_first: '/' }}{% endcapture %}
 <button id="button1" onclick="CopyToClipboard('div1')">Click to copy</button>
 
-<div id="div1">
-@InProceedings{{o}}{{ id }},<br>
-  title =     {{o}}{{ page.tex_title }}{{c}},<br>
-  author =    {{o}}{% assign lastone = page.author.last %}{% for person in page.author %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},&#10;
-  editor =    {{o}}{% assign lastone = site.editor.last %}{% for person in site.editor %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},&#10;
+<pre id="div1">
+@InProceedings{{o}}{{ id }},
+  title =     {{o}}{{ page.tex_title }}{{c}},
+  author =    {{o}}{% assign lastone = page.author.last %}{% for person in page.author %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},
+  editor =    {{o}}{% assign lastone = site.editor.last %}{% for person in site.editor %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},
   publisher = {PMLR},
   series =    {Proceedings of Machine Learning Research},
   volume =    {{ site.volume }},
@@ -34,7 +34,7 @@ layout: default
   url =       {{o}}{{site.url}}{{site.baseurl}}{{ page.url }}{{c}},
   abstract =  {{o}}{{ page.abstract }}{{c}}
 {{c}}
-</div>
+</pre>
 
 <button id="button1" onclick="CopyToClipboard('div1')">Click to copy</button>
 
