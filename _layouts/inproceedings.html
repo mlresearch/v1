@@ -13,13 +13,13 @@ layout: default
 
 </head>
 
-<div class="page-content" id="content">
+<div class="page-content" id="content" rows=2 columns=10>
   {% include paper_abstract.html %}
 {% assign o = '{' %}
 {% assign c = '}' %}
 {% capture id %}{{ page.id | remove_first: '/' }}{% endcapture %}
 
-<pre id="hidden-copy" hidden>
+<code id="bibtex">
 @InProceedings{{o}}{{ id }},
   title =     {{o}}{{ page.tex_title }}{{c}},
   author =    {{o}}{% assign lastone = page.author.last %}{% for person in page.author %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},
@@ -33,9 +33,9 @@ layout: default
   url =       {{o}}{{site.url}}{{site.baseurl}}{{ page.url }}{{c}},
   abstract =  {{o}}{{ page.abstract }}{{c}}
 {{c}}
-</pre>
+</code>
 
-<button id="button1" onclick="CopyToClipboard('hidden-copy')">Copy BibTeX</button>
+<button id="button1" onclick="CopyToClipboard('bibtex')">Copy BibTeX</button>
 
 
   {% if site.comments %}
