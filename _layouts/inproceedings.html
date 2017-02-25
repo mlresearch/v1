@@ -18,9 +18,9 @@ layout: default
 {% assign o = '{' %}
 {% assign c = '}' %}
 {% capture id %}{{ page.id | remove_first: '/' }}{% endcapture %}
+<button id="button1" onclick="CopyToClipboard('div1')">Click to copy</button>
 
-  <div id="hide">
-    <textarea id="copy-me" cols=60 rows=14>
+<div id="div1" >
 @InProceedings{{o}}{{ id }},&#10;
   title =     {{o}}{{ page.tex_title }}{{c}},&#10;
   author =    {{o}}{% assign lastone = page.author.last %}{% for person in page.author %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},&#10;
@@ -34,11 +34,12 @@ layout: default
   url =       {{o}}{{site.url}}{{site.baseurl}}{{ page.url }}{{c}},
   abstract =  {{o}}{{ page.abstract }}{{c}}
 {{c}}
-</textarea>
 </div>
-  <button id="copy-btn">Copy BibTeX</button><br/><br/>
-  <textarea placeholder="paste here"></textarea>
-  
+
+<button id="button1" onclick="CopyToClipboard('div1')">Click to copy</button>
+
+<textarea placeholder="Press ctrl+v to Paste the copied text" rows="5" cols="20"></textarea>
+
   {% if site.comments %}
   {% include disqus_comment_code.html %}
   {% endif %}
