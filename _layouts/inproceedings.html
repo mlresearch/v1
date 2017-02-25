@@ -18,7 +18,7 @@ layout: default
 {% assign o = '{' %}
 {% assign c = '}' %}
 {% capture id %}{{ page.id | remove_first: '/' }}{% endcapture %}
-<div class="codebox">
+<div id="codebox">
 <pre><code id="bibtex">
 @InProceedings{{o}}{{ id }},
   title =     {{o}}{{ page.tex_title }}{{c}},
