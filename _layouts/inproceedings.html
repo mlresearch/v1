@@ -15,17 +15,12 @@ layout: default
 
 {% include paper_abstract.html %}
 
-<button id="button1" onclick="CopyToClipboard('bibtex')">Copy BibTeX</button>
-{% assign o = '{' %}
-{% assign c = '}' %}
-{% capture id %}{{ page.id | remove_first: '/' }}{% endcapture %}
-<div class="codebox">
-<pre><code id="bibtex">{% include bibtex_entry %}</code></pre>
-</div>
-
-  {% if site.comments %}
-  {% include disqus_comment_code.html %}
-  {% endif %}
+{% if site.bibtex_copy %}
+{% include bibtex_copy_section.html %}
+{% endif %}
+{% if site.comments %}
+{% include disqus_comment_code.html %}
+{% endif %}
 </div>
 
 <!-- copy widget -->
