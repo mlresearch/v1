@@ -20,9 +20,9 @@ layout: default
 {% capture id %}{{ page.id | remove_first: '/' }}{% endcapture %}
 
   <div id="hide">
-  <input type="text" name="Element To Be Copied" id="copy-me" value="
-@InProceedings{{o}}{{ id }},<br>
-  title =     {{o}}{{ page.tex_title }}{{c}},<br>
+    <textarea id="copy-me">
+@InProceedings{{o}}{{ id }},
+  title =     {{o}}{{ page.tex_title }}{{c}},
   author =    {{o}}{% assign lastone = page.author.last %}{% for person in page.author %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},
   editor =    {{o}}{% assign lastone = site.editor.last %}{% for person in site.editor %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},
   publisher = {PMLR},
@@ -34,7 +34,7 @@ layout: default
   url =       {{o}}{{site.url}}{{site.baseurl}}{{ page.url }}{{c}},
   abstract =  {{o}}{{ page.abstract }}{{c}}
 {{c}}
-"/>
+</textarea>
 </div>
   <button id="copy-btn">Copy BibTeX</button><br/><br/>
   <textarea placeholder="paste here"></textarea>
