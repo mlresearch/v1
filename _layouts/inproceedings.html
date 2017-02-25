@@ -21,12 +21,12 @@ layout: default
 
   <div id="hide">
     <textarea id="copy-me">
-@InProceedings{{o}}{{ id }},
-  title =     {{o}}{{ page.tex_title }}{{c}},
-  author =    {{o}}{% assign lastone = page.author.last %}{% for person in page.author %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},
-  editor =    {{o}}{% assign lastone = site.editor.last %}{% for person in site.editor %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},
-  publisher = {PMLR},
-  series =    {Proceedings of Machine Learning Research},
+@InProceedings{{o}}{{ id }},\n
+  title =     {{o}}{{ page.tex_title }}{{c}},\n
+  author =    {{o}}{% assign lastone = page.author.last %}{% for person in page.author %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},\n
+  editor =    {{o}}{% assign lastone = site.editor.last %}{% for person in site.editor %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},\n
+  publisher = {PMLR},\n
+  series =    {Proceedings of Machine Learning Research},\n
   volume =    {{ site.volume }},
   booktitle = {{o}}{{ page.container-title }}{{c}},
   pages =     {{o}}{{ page.page }}{{c}},
