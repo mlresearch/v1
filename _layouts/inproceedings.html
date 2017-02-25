@@ -20,13 +20,13 @@ layout: default
 {% capture id %}{{ page.id | remove_first: '/' }}{% endcapture %}
 
   <div id="hide">
-    <textarea id="copy-me">
-@InProceedings{{o}}{{ id }},&#13;
-  title =     {{o}}{{ page.tex_title }}{{c}},&#13;
-  author =    {{o}}{% assign lastone = page.author.last %}{% for person in page.author %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},&#13;
-  editor =    {{o}}{% assign lastone = site.editor.last %}{% for person in site.editor %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},&#13;
-  publisher = {PMLR},&#13;
-  series =    {Proceedings of Machine Learning Research},&#13;
+    <textarea id="copy-me" cols=60 rows=14>
+@InProceedings{{o}}{{ id }},&#10;
+  title =     {{o}}{{ page.tex_title }}{{c}},&#10;
+  author =    {{o}}{% assign lastone = page.author.last %}{% for person in page.author %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},&#10;
+  editor =    {{o}}{% assign lastone = site.editor.last %}{% for person in site.editor %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},&#10;
+  publisher = {PMLR},
+  series =    {Proceedings of Machine Learning Research},
   volume =    {{ site.volume }},
   booktitle = {{o}}{{ page.container-title }}{{c}},
   pages =     {{o}}{{ page.page }}{{c}},
