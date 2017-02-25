@@ -22,8 +22,7 @@ editor:
 - given: Joaquin
   family: Quiñonero Candela
 title: Proceedings of Machine Learning Research
-email: ''
-description: Gaussian Processes in Practice13-2006-06-13, Bletchley Park, UK
+description: Gaussian Processes in Practice, 12-2006-06-13, Bletchley Park, UK
 url: http://proceedings.mlr.press
 baseurl: "/v1"
 twitter_username: mlresearch
@@ -33,6 +32,7 @@ permalink: "/:title.html"
 github:
   edit: true
   repository: v1
+email: ''
 conference:
   name: Gaussian Processes in Practice
   url: http://gpss.cc/gpip/
