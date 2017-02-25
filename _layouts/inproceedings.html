@@ -19,8 +19,8 @@ layout: default
 {% assign c = '}' %}
 
   <input type="text" name="Element To Be Copied" id="copy-me" value="
-@InProceedings{{o}}{{ id }},
-  title =     {{o}}{{ page.tex_title }}{{c}},
+@InProceedings{{o}}{{ id }},\n
+  title =     {{o}}{{ page.tex_title }}{{c}},\n
   author =    {{o}}{% assign lastone = page.author.last %}{% for person in page.author %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},
   editor =    {{o}}{% assign lastone = site.editor.last %}{% for person in site.editor %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},
   publisher = {PMLR},
