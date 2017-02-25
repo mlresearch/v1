@@ -47,6 +47,7 @@ github:
   edit: true
   repository: v1
 bibtex_copy: true
+endnote_copy: true
 email: ''
 conference:
   name: Gaussian Processes in Practice
