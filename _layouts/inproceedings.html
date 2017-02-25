@@ -16,7 +16,6 @@ layout: default
 <div class="page-content" id="content">
   {% include paper_abstract.html %}
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <input type="text" name="Element To Be Copied" id="copy-me" value="foo loves bar"/>
   <button id="copy-btn">Copy BibTeX</button><br/><br/>
   <textarea placeholder="paste here"></textarea>
@@ -25,3 +24,7 @@ layout: default
   {% include disqus_comment_code.html %}
   {% endif %}
 </div>
+
+<!-- copy widget -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="../js/copy_input.js"></script>
