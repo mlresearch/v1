@@ -13,31 +13,16 @@ layout: default
 
 </head>
 
-<div class="page-content" id="content" rows=2 columns=10>
-  {% include paper_abstract.html %}
+{% include paper_abstract.html %}
+
+<button id="button1" onclick="CopyToClipboard('bibtex')">Copy BibTeX</button>
 {% assign o = '{' %}
 {% assign c = '}' %}
 {% capture id %}{{ page.id | remove_first: '/' }}{% endcapture %}
 <div id="codebox">
-<pre><code id="bibtex">
-@InProceedings{{o}}{{ id }},
-  title =     {{o}}{{ page.tex_title }}{{c}},
-  author =    {{o}}{% assign lastone = page.author.last %}{% for person in page.author %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},
-  editor =    {{o}}{% assign lastone = site.editor.last %}{% for person in site.editor %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},
-  publisher = {PMLR},
-  series =    {Proceedings of Machine Learning Research},
-  volume =    {{ site.volume }},
-  booktitle = {{o}}{{ page.container-title }}{{c}},
-  pages =     {{o}}{{ page.page }}{{c}},
-  pdf =       {{o}}{{ page.pdf }}{{c}},
-  url =       {{o}}{{site.url}}{{site.baseurl}}{{ page.url }}{{c}},
-  abstract =  {{o}}{{ page.abstract }}{{c}}
-{{c}}
-</code>
-</pre>
+<pre><code id="bibtex">{% include bibtex_entry.html %}</code></pre>
 </div>
 
-<button id="button1" onclick="CopyToClipboard('bibtex')">Copy BibTeX</button>
 
 
   {% if site.comments %}
