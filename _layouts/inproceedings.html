@@ -18,8 +18,8 @@ layout: default
 {% assign o = '{' %}
 {% assign c = '}' %}
 {% capture id %}{{ page.id | remove_first: '/' }}{% endcapture %}
-
-<code id="bibtex"  width="150px" height="150px" overflow="scroll">
+<div class="codebox">
+<code id="bibtex">
 @InProceedings{{o}}{{ id }},
   title =     {{o}}{{ page.tex_title }}{{c}},
   author =    {{o}}{% assign lastone = page.author.last %}{% for person in page.author %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},
@@ -34,6 +34,7 @@ layout: default
   abstract =  {{o}}{{ page.abstract }}{{c}}
 {{c}}
 </code>
+</div>
 
 <button id="button1" onclick="CopyToClipboard('bibtex')">Copy BibTeX</button>
 
