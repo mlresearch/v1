@@ -15,8 +15,24 @@ layout: default
 
 <div class="page-content" id="content">
   {% include paper_abstract.html %}
+{% assign o = '{' %}
+{% assign c = '}' %}
 
-  <input type="text" name="Element To Be Copied" id="copy-me">CatDoc</input>
+  <input type="text" name="Element To Be Copied" id="copy-me" value="
+@InProceedings{{o}}{{ id }},
+  title =     {{o}}{{ page.tex_title }}{{c}},
+  author =    {{o}}{% assign lastone = page.author.last %}{% for person in page.author %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},
+  editor =    {{o}}{% assign lastone = site.editor.last %}{% for person in site.editor %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},
+  publisher = {PMLR},
+  series =    {Proceedings of Machine Learning Research},
+  volume =    {{ site.volume }},
+  booktitle = {{o}}{{ page.container-title }}{{c}},
+  pages =     {{o}}{{ page.page }}{{c}},
+  pdf =       {{o}}{{ page.pdf }}{{c}},
+  url =       {{o}}{{site.url}}{{site.baseurl}}{{ page.url }}{{c}},
+  abstract =  {{o}}{{ page.abstract }}{{c}}
+{{c}}
+"/>
   <button id="copy-btn">Copy BibTeX</button><br/><br/>
   <textarea placeholder="paste here"></textarea>
   
