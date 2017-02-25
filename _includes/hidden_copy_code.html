@@ -1,9 +1,9 @@
 <script>
   <!-- Solution from http://stackoverflow.com/questions/31593297/using-execcommand-javascript-to-copy-hidden-text-to-clipboard -->
-  var copyBtn   = $("#copy-btn"),
-  input     = $("#copy-me");
+var copyBtn   = $("#copy-btn"),
+input     = $("#copy-me");
 
-  function copyToClipboardFF(text) {
+function copyToClipboardFF(text) {
   window.prompt ("Copy to clipboard: Ctrl C, Enter", text);
 }
 
@@ -41,6 +41,9 @@ function copyToClipboard() {
     if (success) {
       alert ("The text is on the clipboard, try to paste it!");
       // remove temp element.
+      tmpElem.remove();
+    } else {
+      alert ("It didn't work");
       tmpElem.remove();
     }
   }
