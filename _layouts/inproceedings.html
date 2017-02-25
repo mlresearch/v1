@@ -19,7 +19,7 @@ layout: default
 {% assign c = '}' %}
 {% capture id %}{{ page.id | remove_first: '/' }}{% endcapture %}
 
-<pre id="hidden-copy">
+<pre id="hidden-copy" hidden>
 @InProceedings{{o}}{{ id }},
   title =     {{o}}{{ page.tex_title }}{{c}},
   author =    {{o}}{% assign lastone = page.author.last %}{% for person in page.author %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},
