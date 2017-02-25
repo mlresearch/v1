@@ -3,7 +3,7 @@
   author = 	 {{o}}{% assign lastone = page.author.last %}{% for person in page.author %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},
   booktitle = 	 {{o}}{{ page.container-title }}{{c}},
   pages = 	 {{o}}{{ page.firstpage }}--{{ page.lastpage }}{{c}},
-  year = 	 {{o}}{{ site.issued.date-parts.first }}{{c}},
+  year = 	 {{o}}{{ site.published | date: "%Y" }}{{c}},
   editor = 	 {{o}}{% assign lastone = site.editor.last %}{% for person in site.editor %}{{ person.given }} {{ person.family }}{% unless person == lastone %} and {%endunless %}{% endfor %}{{c}},
   volume = 	 {{o}}{{ site.volume }}{{c}},
   series = 	 {Proceedings of Machine Learning Research},
