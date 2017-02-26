@@ -21,7 +21,8 @@ tex_title: Gaussian Process Approximations of Stochastic Differential Equations
 firstpage: 1
 lastpage: 16
 page: 1-16
-sections: 
+order: 1
+cycles: false
 author:
 - given: Cedric
   family: Archambeau
