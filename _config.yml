@@ -5,7 +5,7 @@ volume: 1
 start: 2006-06-12
 end: 2006-06-13
 published: 2007-03-11
-comments: false
+comments: 'no'
 year: '2006'
 shortname: GPIP
 bibsource: http://jmlr.csail.mit.edu/proceedings/
@@ -51,6 +51,7 @@ display:
     bibtex: true
     endnote: true
     apa: true
+  comments: false
 email: ''
 conference:
   name: Gaussian Processes in Practice
