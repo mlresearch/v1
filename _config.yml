@@ -11,9 +11,6 @@ shortname: GPIP
 layout: proceedings
 id: LawrenceNSACQ2006
 month: 0
-abstract: ''
-tex_title: 
-title: Proceedings of Machine Learning Research
 cycles: false
 editor:
 - given: Neil D.
@@ -22,6 +19,7 @@ editor:
   family: Schwaighofer
 - given: Joaquin
   family: Quiñonero Candela
+title: Proceedings of Machine Learning Research
 description: |
   Gaussian Processes in Practice
     Held in Bletchley Park, UK on 12-13 June 2006
