@@ -11,7 +11,7 @@
   </p>
   <p class="links">
     [<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">abs</a>]
-    {% if post.pdf %}[<a href="{{ post.pdf }}">pdf</a>]{% endif %}
-    {% if post.supplementary %}[<a href="{{ post.supplementary }}">supplementary</a>]{% endif %}
+    {% if post.pdf %}[<a href="{{ post.pdf }}" target="_blank" onclick="_gaq.push(['_trackEvent','Download','PDF',this.href]);">pdf</a>]{% endif %}
+    {% if post.supplementary %}[<a href="{{ post.supplementary }}" target="_blank" onclick="_gaq.push(['_trackEvent','Download','PDF',this.href]);">supplementary</a>]{% endif %}
   </p>
 </div>
