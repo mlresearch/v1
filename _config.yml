@@ -6,6 +6,9 @@ start: 2006-06-12
 end: 2006-06-13
 published: 2007-03-11
 comments: 'no'
+plugins:
+  - jekyll-remote-theme
+remote_theme: lawrennd/proceedings
 year: '2006'
 shortname: GPIP
 layout: proceedings

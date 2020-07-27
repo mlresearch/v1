@@ -12,13 +12,8 @@ layout: default
 {% endif %}
 
   
-<p><strong>Editors:
-    {% assign lastone = site.editor | last %}
-    {% for person in site.editor %}
-    {% include listperson.html %}
-    {% endfor %}
-</strong></p>
-<p>[<a href="./bibliography.bib" target="_blank" onclick="ga('send', 'event', 'Download File', 'Download', '{{ site.url }}/{{site.baseurl}}/bibliography.bib', 14);">bib</a>][<a href="./citeproc.yaml"  target="_blank" onclick="ga('send', 'event', 'Download File', 'Download', '{{ site.url }}/{{site.baseurl}}/citeproc.yaml', 14);">citeproc</a>]</p>
+<p><strong>Editors: {% assign lastone = site.editor | last %}{% for person in site.editor %}{% include listperson.html %}{% endfor %}</strong></p>
+<p>[<a href="./bibliography.bib" target="_blank" onclick="ga('send', 'event', 'Download File', 'Download', '{{ site.url }}{{site.baseurl}}/bibliography.bib', 14);">bib</a>][<a href="./citeproc.yaml"  target="_blank" onclick="ga('send', 'event', 'Download File', 'Download', '{{ site.url }}{{site.baseurl}}/citeproc.yaml', 14);">citeproc</a>]</p>
 <div id="sectionnav">{% if site.sections %}
   <p>Contents:</p>
   <ul>
@@ -34,7 +29,7 @@ layout: default
   <input type="search" name="filter-titles" id="search-titles" value />
   </p>
 </div>
-{% assign sorted = (site.posts | sort: 'order') %}
+{% assign sorted = site.posts | sort: 'order' %}
 {% if site.sections %}{% for section in site.sections %}
 <h3 id="{{ section.name }}">{{ section.title }}</h3>
 {% for post in sorted %}{% if section.name == post.section %}
@@ -51,4 +46,4 @@ layout: default
 
 <!-- Search Widget -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="../js/search.js"></script>
+<script src="{{site.url}}{{site.baseurl}}/js/search.js"></script>
