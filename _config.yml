@@ -41,6 +41,9 @@ url: http://proceedings.mlr.press
 baseurl: "/v1"
 twitter_username: MLResearchPress
 github_username: mlresearch
+ghub:
+  edit: true
+  repository: v1
 markdown: kramdown
 permalink: "/:title.html"
 display:
