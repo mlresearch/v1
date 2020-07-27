@@ -43,9 +43,6 @@ twitter_username: MLResearchPress
 github_username: mlresearch
 markdown: kramdown
 permalink: "/:title.html"
-github:
-  edit: true
-  repository: v1
 display:
   copy_button:
     bibtex: true
