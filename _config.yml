@@ -8,7 +8,7 @@ end: 2006-06-13
 published: 2007-03-11
 comments: false
 plugins:
-  - jekyll-remote-theme
+- jekyll-remote-theme
 remote_theme: lawrennd/proceedings
 year: '2006'
 shortname: GPIP
@@ -65,6 +65,6 @@ conference:
 analytics:
   google:
     tracking_id: UA-92432422-1
+orig_bibfile: "/Users/neil/mlresearch/bibtex.bib"
 # Site settings
-# Auto generated from v1.bib
----
+# Original source:  /Users/neil/mlresearch/bibtex.bib
