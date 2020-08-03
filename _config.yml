@@ -7,9 +7,11 @@ start: 2006-06-12
 end: 2006-06-13
 published: 2007-03-11
 comments: false
+markdown: kramdown
 plugins:
 - jekyll-remote-theme
 remote_theme: lawrennd/proceedings
+style: pmlr
 year: '2006'
 shortname: GPIP
 layout: proceedings
@@ -48,8 +50,6 @@ github_username: mlresearch
 ghub:
   edit: true
   repository: v1
-markdown: kramdown
-style: pmlr
 permalink: "/:title.html"
 display:
   copy_button:
