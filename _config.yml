@@ -49,6 +49,7 @@ ghub:
   edit: true
   repository: v1
 markdown: kramdown
+style: pmlr
 permalink: "/:title.html"
 display:
   copy_button:
