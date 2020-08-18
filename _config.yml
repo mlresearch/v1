@@ -1,5 +1,6 @@
 ---
 booktitle: Gaussian Processes in Practice
+orig_bibfile: "/Users/neil/mlresearch/bibtex.bib"
 publisher: PMLR
 series: Proceedings of Machine Learning Research
 issn: 1938-7228
@@ -9,6 +10,10 @@ end: 2006-06-13
 published: 2007-03-11
 comments: false
 markdown: kramdown
+exclude:
+- README.md
+- Gemfile
+- ".gitignore"
 plugins:
 - jekyll-feed
 - jekyll-seo-tag
@@ -72,6 +77,5 @@ conference:
 analytics:
   google:
     tracking_id: UA-92432422-1
-orig_bibfile: "/Users/neil/mlresearch/bibtex.bib"
 # Site settings
 # Original source:  /Users/neil/mlresearch/bibtex.bib
