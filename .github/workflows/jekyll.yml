@@ -51,6 +51,9 @@ jobs:
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
 
+      - name: Move binary files to _site
+        run: |
+          mv binaries/* _site/        
   # Deployment job
   deploy:
     environment:
