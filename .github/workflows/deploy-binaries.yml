@@ -16,7 +16,12 @@ jobs:
       with:
         ref: binaries
 
-   - name: Checkout gh-pages branch
+    - name: Setup Git for deployment
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+    - name: Checkout gh-pages branch
       run: |
         git fetch origin
         git checkout gh-pages
