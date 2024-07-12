@@ -1,28 +1,26 @@
-name: Deploy binaries to Pages
+# .github/workflows/deploy-binaries.yml
+name: Deploy Binary Files
 
 on:
   push:
-    branches: ["binaries"]
-
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+    branches:
+      - binaries
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    - name: Checkout Binaries branch
+      uses: actions/checkout@v2
+      with:
+        ref: binaries
 
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-
+    - name: Deploy binary files
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git checkout gh-pages
+        git add *
+        git commit -m "Deploy binary files"
+        git push origin gh-pages
