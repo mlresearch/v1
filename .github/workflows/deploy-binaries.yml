@@ -16,11 +16,16 @@ jobs:
       with:
         ref: binaries
 
+   - name: Checkout gh-pages branch
+      run: |
+        git fetch origin
+        git checkout gh-pages
+        git pull origin gh-pages
+
     - name: Deploy binary files
       run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git checkout gh-pages
-        git add *
+        cp -r * ../ # Copy all files to a parent directory to preserve structure
+        cd ../
+        git add .
         git commit -m "Deploy binary files"
         git push origin gh-pages
